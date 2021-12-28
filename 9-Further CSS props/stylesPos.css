@@ -1,0 +1,55 @@
+html, body{
+    margin: 0px;
+}
+
+div{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(27, 61, 173);
+    border: solid black 3px;
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+    
+}
+
+.squares-wrapper {
+    
+    /*LESSON LEARNT: all: initial, restores all the attributes of the selected elements  >>  URL:  https://stackoverflow.com/questions/15901030/reset-remove-css-styles-for-element-only */
+    all: initial;
+    /*LESSON LEARNT:  font-size: 0, works to eliminate the tiny space between inline-block divs >> URL:   https://www.geeksforgeeks.org/how-to-remove-the-space-between-inline-block-elements/   */
+    font-size: 0;
+}
+
+#middle{
+    background-color: cornflowerblue;
+}
+
+#static #middle{
+    position: static;
+    top: 100px;
+}
+
+#relative #middle{
+    position: relative;
+    /*top: 30px;*/
+    bottom: 80px;
+    left: 80px;
+}
+
+#absolute{
+    position: relative;
+}
+
+#absolute #middle{
+    position: absolute;
+    top: 20px;
+    left: -10px;
+}
+
+#fixed #middle{
+    position: fixed;
+    /*top: 30px;*/
+    top: 100px;
+    left: 100px;
+}

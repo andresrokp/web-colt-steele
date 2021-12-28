@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <h1>Un título ahí</h1>
+        <div id="one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem exercitationem ex corrupti debitis explicabo. Vitae nihil aliquam voluptatibus, blanditiis error corporis facere doloremque, fugiat excepturi, cum aspernatur distinctio. Ducimus, quasi!</div>
+        <div id="two">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem exercitationem ex corrupti debitis explicabo. Vitae nihil aliquam voluptatibus, blanditiis error corporis facere doloremque, fugiat excepturi, cum aspernatur distinctio. Ducimus, quasi!</div>
+        <div id="three">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem exercitationem ex corrupti debitis explicabo. Vitae nihil aliquam voluptatibus, blanditiis error corporis facere doloremque, fugiat excepturi, cum aspernatur distinctio. Ducimus, quasi!</div>
+        <div id="four">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem exercitationem ex corrupti debitis explicabo. Vitae nihil aliquam voluptatibus, blanditiis error corporis facere doloremque, fugiat excepturi, cum aspernatur distinctio. Ducimus, quasi!</div>
+        <input type="range" name="" id="changer" value="0" step="0.1" min="0" max="50" oninput="to_change_width();">
+        <br>
+        <button>¡Relléname!</button>
+    </main>
+</body>
+</html>
+
+
+<script>
+    function to_change_width(){
+        var value = document.getElementById("changer").value;
+        document.getElementById("four").style.borderRadius = value+"%";
+    }
+</script>

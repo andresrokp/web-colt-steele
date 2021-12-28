@@ -1,0 +1,34 @@
+html{
+    font-size:20px
+}
+
+article{
+    font-size: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+/*HERE rem relates the font with the root html*/
+
+p{
+    font-size: 1.2rem;
+}
+
+button{
+    font-size: 2rem;
+    /*HERE the em associate the size to the current element font instead to the root*/
+    border-radius: 1em;
+    padding: 0 2em;
+}
+
+ul, li{
+    font-size: 1rem;
+}
+

@@ -1,0 +1,24 @@
+body{
+    background-color: #1f1f1f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: roboto;
+    height: 100vh;
+}
+
+button{
+    background: none;
+    padding: 0.8em 1.3em;
+    color: #cf3903;
+    border: solid 2px #cf3903;
+    transition: 0.5s;
+}
+
+button:hover{
+    border-color: #dbdb01;
+    color: white;
+    /* LESSON LEARNT : Box-shadow is a property to define a shadow of the element URL */
+    box-shadow: 0em 0.5em 0.5em -0.4em #dbdb01;
+    transform: translateY(-0.2em);
+}

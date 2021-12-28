@@ -1,0 +1,36 @@
+
+h1{
+    background-color: palegoldenrod;
+    border: 1px black solid;
+    margin: 50px;
+    display: inline-block;
+}
+
+span{
+    background-color: palevioletred;
+    border: 1px black solid;
+    width: 300px;
+    padding: 20px;
+    margin: 30px;
+}
+
+div{
+    height: 140px;
+    width: 250px;
+    padding: 40px;
+    background-color: palegreen;
+    border: 1px black solid;
+    display: inline-block;
+}
+
+section{
+    background-color: paleturquoise;
+    width: 500px;
+    height: 400px;
+}
+
+nav{
+    background-color: turquoise;
+    width: 50%;
+    height: 40%;
+}

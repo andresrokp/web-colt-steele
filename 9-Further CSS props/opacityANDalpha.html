@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ColtAlphaOpacity</title>
+    <link rel="stylesheet" href="stylesOpAndAlp.css">
+</head>
+
+<body>
+    <section>
+        <div id="alpha">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero vel, necessitatibus eligendi animi fuga illum illo hic sint quidem veniam ipsum quo. Fugit, adipisci eos animi non rerum recusandae eveniet!</p>
+        </div>
+    </section>
+    <section>
+        <div id="opacity">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nisi beatae excepturi ipsam enim debitis esse amet, consectetur recusandae eum labore voluptatibus maxime libero. Explicabo incidunt dolores a necessitatibus reprehenderit!</p>
+        </div>
+    </section>
+
+    <input style="width:50%" type="range" name="" min="0" step="0.2" max="100" oninput="changeValue();" id="range-active-JS">
+    <script>
+        function changeValue(){
+            var val = document.getElementById("range-active-JS").value;
+            var attributeMax = 1; //this is the max value of the target attribute
+            var proportionedVal = attributeMax*val/100;
+            document.getElementById("alpha").style.backgroundColor = "rgb(255,255,255,"+proportionedVal+")"
+            document.getElementById("opacity").style.opacity = proportionedVal            
+            
+        }
+    </script>
+    
+</body>
+
+</html>

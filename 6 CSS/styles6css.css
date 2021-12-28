@@ -1,0 +1,119 @@
+
+
+.firstPart h1{
+    color:darkcyan;
+    text-align: center;
+}
+
+.firstPart button{
+    color:  rgb(251, 255, 0);
+    background-color: red;
+    font-size: 35px;
+}
+
+.firstPart p{
+    line-height: 2.5;
+}
+
+.firstPart a{
+    text-decoration: none;
+}
+
+.firstPart .div-variable{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.firstPart h2{
+    margin:0;
+    border:0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h2:nth-of-type(2n){
+    color:darkmagenta;
+    text-align: right;
+}
+
+
+
+.secondPart button{
+    background-color: cyan;
+    font-size: 25px;
+}
+
+.secondPart h1,h2{
+    color: red;
+}
+
+.secondPart #signup{
+    background-color: #563635;
+    color: #78C091;
+}
+
+.tag{
+    background-color: #5B6057;
+    color: #78C091;
+    font-size: 12pt;
+}
+
+.post a {
+    color: #ae2012;
+}
+
+footer a {
+    color: green;
+}
+
+footer>a {
+    color: magenta;
+    font-size: 20px;
+}
+
+.secondPart h2 + button{
+    font-size: 20px;
+}
+
+input[type="password"]{
+    color: red;
+}
+
+a[href*="cvb"]{
+    color: black;
+    font-weight: bold;
+}
+
+#mi-boton:hover{
+    background-color: #9b2226;
+    color: #f1faee;
+}
+
+.post button:hover{
+    color: #ffd166;
+    background-color: #073b4c;
+}
+
+.post button:active{
+    color: #ffd166;
+    background-color: #ef476f;
+}
+
+.post:nth-of-type(2n+1){
+    background-color: #edf2f4;
+}
+
+p::first-line{
+    color: #219ebc;
+}
+
+.post h2::first-letter{
+    font-size: 40px;
+}
+
+.post section::selection{
+    background-color:cyan;
+}
+
+
+
