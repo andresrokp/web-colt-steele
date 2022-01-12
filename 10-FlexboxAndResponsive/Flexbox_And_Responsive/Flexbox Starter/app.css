@@ -26,7 +26,7 @@ h1 {
 
     
     
-    flex-wrap: wrap;                    /* indicates what to do with the remaining elements after cope que flex main direction */
+    flex-wrap: nowrap;                    /* indicates what to do with the remaining elements after cope que flex main direction */
                                         /* wrap : the elements in excess to place next to the main line in direction of the cross axis */
                                         /* wrap-reverse : makes to add the new line in negative direction of the cross axis */
                                         /* nowrap : or default skishes all to fit if the main axis is crowded */
@@ -37,8 +37,8 @@ h1 {
                                         /* stretch : makes the elements to stretch until fill the cross axis */
                                         /* baseline : aligns with the element content, like text */
     /**/
-    align-content: space-around;        /* organize the items overflow columns/rows aver the cross axis */
-                                        /* the same shit as justify-content but regarding overflow piles */
+    align-content: space-between;        /* organize the items overflow columns/rows aver the cross axis */
+                                        /* the same thing as justify-content but regarding overflow piles */
 
     /* animation: stretch 2s infinite; */
 
@@ -51,7 +51,7 @@ h1 {
 }
 
 #container div {
-    width: 700px;
+    width: 250px;
     height: 100px;
 }
 
@@ -60,3 +60,16 @@ h1 {
     width: 200px;
 }
 
+div:nth-of-type(3){
+    align-self: auto;               /* align-self defines the alignment of just ONE element respect to the aling-item-axis */
+    /* same thing as align-item but just over the element who  */
+    flex-basis: 400px;              /* felx-basis stablish the initial size of the element along the main axis */
+}
+
+div:nth-of-type(4){
+    flex-grow: 2;                   /* flex-grow shares out */
+}
+
+div:nth-of-type(5){
+    flex-grow: 1;
+}
