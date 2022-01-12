@@ -10,5 +10,53 @@ h1 {
     height: 500px;
     margin: 0 auto;
     border: 5px solid #003049;
+    
+    display: flex;                  /* Tells the container to be a flexbox */
+                                    /* Flex containers bid contained elements to stay inside of them */
+    flex-direction: row;             /* flex-direction stablish the main direction, and indirectly the cross direction: if  the flex is a column or a row*/
+    /* flex-direction: column;         Tells the container to behave as a column */
+    /* flex-direction: row-reverse;    row organizes from right to left */
+    /* flex-direction: column-reverse;    column organizes from bottom to top */
+
+    justify-content: space-between;        /* justify-content    stablish how the items are distributed along the main direction */
+                                          /* space-around   distributes the items in the main direction equally spaced around the container */
+                                          /* space-between  distributes the items in the main direction equally spaced between the elements */
+                                          /* space-evenly   distributes the items in the main direction equally spaced between the container */
+                                          /* center, flex-start and flex-end    for basic positioning*/    
+
+    
+    
+    flex-wrap: wrap;                    /* indicates what to do with the remaining elements after cope que flex main direction */
+                                        /* wrap : the elements in excess to place next to the main line in direction of the cross axis */
+                                        /* wrap-reverse : makes to add the new line in negative direction of the cross axis */
+                                        /* nowrap : or default skishes all to fit if the main axis is crowded */
+    /**/
+    align-items: baseline;                /* tells how to align the elements respect to an imaginary axis */
+                                        /* flex-start : all elems stik to the "near" side */
+                                        /* flex-end : elems stick to the "further" side */
+                                        /* stretch : makes the elements to stretch until fill the cross axis */
+                                        /* baseline : aligns with the element content, like text */
+    /**/
+    align-content: space-around;        /* organize the items overflow columns/rows aver the cross axis */
+                                        /* the same shit as justify-content but regarding overflow piles */
+
+    /* animation: stretch 2s infinite; */
+
+}
+
+@keyframes stretch {
+    0% {  width: 5%; }
+    50% {  width: 95%; }
+    100% { width: 5%; }
+}
+
+#container div {
+    width: 700px;
+    height: 100px;
+}
+
+#container div:nth-of-type(2n){
+    height: 200px;
+    width: 200px;
 }
 
