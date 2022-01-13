@@ -67,9 +67,30 @@ div:nth-of-type(3){
 }
 
 div:nth-of-type(4){
-    flex-grow: 2;                   /* flex-grow shares out */
+    flex-grow: 2;                   /* flex-grow : shares out the proportion of empty space the element will take*/
 }
 
 div:nth-of-type(5){
     flex-grow: 1;
+}
+
+/*  >>>   flex-shrink : gives the rate an element will shrink while decreasing */
+
+main{
+    height: 500px;
+    border: 1px solid white;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+}
+
+main .sidebar{
+    background-color: red;
+    flex:1 300px;
+
+}
+
+main .maincontent{
+    background-color: blue;
+    flex:5 1 200px;
 }

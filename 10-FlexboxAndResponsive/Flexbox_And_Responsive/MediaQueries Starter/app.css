@@ -1,13 +1,28 @@
+*{
+    border: 1px red dashed;
+}
 body {
     font-family: 'Open Sans', sans-serif;
 }
 
 h1 {
-    font-size: 6em;
+    font-size: 5vw;
     text-align: center;
+    color: purple;
+    max-width: 980px;
 }
 nav {
-    font-size: 1.5em;
+    font-size: 1.3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 ul,li {
@@ -15,6 +30,40 @@ ul,li {
     margin: 0;
     padding: 0;
 }
+
+@media (min-width: 400px){
+    h1{
+        color: red;
+    }
+}
+
+@media (min-width: 580px){
+    nav{
+        flex-direction: row;
+    }
+    nav ul{
+        flex-direction: row;
+        flex: 1;
+        justify-content: space-evenly;
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 700px){
+    h1{
+        color: orange;
+    }
+}
+
+@media (min-width: 1000px){
+    h1{
+        color: yellow;
+    }
+    nav {
+        font-size: 1.5em;
+    }
+}
+
 
 
 
