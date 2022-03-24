@@ -59,7 +59,7 @@ main{
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-	height: 100vh;
+	min-height: 100vh;
 }
 
 .pricing-table{
@@ -74,7 +74,7 @@ main{
 }
 
 .img{
-    width: 100%;
+    max-width: 100%;
 }
 
 .price-plan{
@@ -97,7 +97,7 @@ main{
 .features-list{
 	padding: 10px;
 	font-weight: 700;
-	font-size: 0.5em;
+	font-size: 0.7em;
 	letter-spacing: 0.1em;
 	color: rgb(51, 118, 196);
 }
@@ -133,10 +133,10 @@ main{
 	background-color: rgb(59, 130, 211);
 }
 
-@media (min-width:600px){
+@media (min-width:950px){
 	
 	.pricing-table{
-		max-width: 650px;
+		max-width: 950px;
 		flex-direction: row;
 	}
 
