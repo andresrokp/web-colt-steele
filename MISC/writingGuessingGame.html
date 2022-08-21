@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let ans = Math.floor(Math.random()*10);
+        console.log('ans',ans)
+        let guess = parseInt(prompt("Enter an integer from 1 to 10"));
+        console.log('guess',guess)
+        while(guess != ans){
+            console.log('ans',ans)
+            console.log('guess',guess)
+            guess = parseInt(prompt("No, wrong guess. Enter an integer from 1 to 10 again"));
+        }
+        alert("Urray")
+    </script>
+</head>
+
+<body>
+    
+</body>
+</html>
