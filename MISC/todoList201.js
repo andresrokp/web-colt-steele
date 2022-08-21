@@ -1,17 +1,25 @@
 
 let todoList = [];
+let msgDict = {
+    goodCmd : "Introduce a command",
+    errorCmd : "Please enter a valid command",
+    msgNewAct : "Enter the activity",
+}
+let logsDict = {
+    newOK: (todo)=>{console.log(todo," added to the list")}
+}
+
 let opc = "";
-let msgNormal = "Introduce a command"
-let msgError = "Please enter a valid command"
-let msg = msgNormal;
+let badInput = false;
 
 while(opc !== "quit"){
-    opc = prompt(msg)
+    opc = prompt(badInput ? msgDict.errorCmd : msgDict.goodCmd) || "";
+    badInput = false;
     switch(opc){
         case "new":
-            let todo = prompt("Enter the activity")
+            let todo = prompt(msgDict.msgNewAct)
             todoList.push(todo)
-            console.log(todo," added to the list")
+            logsDict.newOK(todo)
             break;
         case "list":
             console.log("*********");
@@ -19,15 +27,15 @@ while(opc !== "quit"){
             console.log("*********");
             break;
         case "delete":
-            let deletePos = prompt("Enter the position to delete")
-            todo.splice()
-            break;
+            // let deletePos = prompt("Enter the position to delete")
+            // todo.splice()
+            // break;
         case "quit":
             opc = "quit"
             console.log("OK, YOU QUIT THE APP")
             break;
         default:
-            msg = msgError;
+            badInput = true;
             break;
     }
 }
